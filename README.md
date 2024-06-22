@@ -1,6 +1,6 @@
 # RHEL-Project-02
 
-Certainly! Let's dive into an intermediate-level project that involves setting up a centralized logging system using Rsyslog on Red Hat Enterprise Linux (RHEL). Centralized logging is crucial for monitoring and troubleshooting in enterprise environments. We'll configure Rsyslog to collect logs from multiple servers and store them centrally.
+This project that involves setting up a centralized logging system using Rsyslog on Red Hat Enterprise Linux (RHEL). Centralized logging is crucial for monitoring and troubleshooting in enterprise environments. We'll configure Rsyslog to collect logs from multiple servers and store them centrally.
 
 ### Project: Setting up Centralized Logging with Rsyslog on RHEL
 
