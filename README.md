@@ -6,6 +6,8 @@ This project that involves setting up a centralized logging system using Rsyslog
 
 # Clone this repo
 ```
+git clone https://github.com/atulkamble/RHEL-Project-02.git
+cd RHEL-Project-02
 ```
 
 # Prerequisite
