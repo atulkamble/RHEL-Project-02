@@ -117,6 +117,11 @@ Verify that logs are being received and stored on the centralized Rsyslog server
 3. **Verify Logs on Central Server:**
 
    Check if the test logs appear in the `/var/log/messages` file on the centralized Rsyslog server.
+   ```
+   sudo cat /var/log/messages
+   sudo grep Testing messages
+   sudo grep -r Testing messages
+   ```
 
 #### Step 4: Additional Configuration (Optional)
 
