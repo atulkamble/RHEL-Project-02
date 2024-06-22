@@ -4,6 +4,10 @@ This project that involves setting up a centralized logging system using Rsyslog
 
 ### Project: Setting up Centralized Logging with Rsyslog on RHEL
 
+# Clone this repo
+```
+```
+
 # Prerequisite
 Set Password
 ```
