@@ -4,6 +4,18 @@ This project that involves setting up a centralized logging system using Rsyslog
 
 ### Project: Setting up Centralized Logging with Rsyslog on RHEL
 
+# Prerequisite
+Set Password
+```
+sudo -i passwd
+```
+Install Editor
+```
+sudo yum install vim -y
+sudo yum install vi -y
+sudo yum install nano -y
+```
+
 #### Step 1: Install and Configure Rsyslog Server
 
 First, we'll set up a Rsyslog server on a designated RHEL server.
@@ -11,7 +23,7 @@ First, we'll set up a Rsyslog server on a designated RHEL server.
 1. **Install Rsyslog:**
 
    ```bash
-   sudo yum install rsyslog
+   sudo yum install rsyslog -y
    ```
 
 2. **Configure Rsyslog:**
@@ -19,6 +31,9 @@ First, we'll set up a Rsyslog server on a designated RHEL server.
    Edit the Rsyslog configuration file (`/etc/rsyslog.conf`) to enable receiving logs from remote servers:
 
    ```bash
+   cat /etc/rsyslog.conf
+   sudo nano /etc/rsyslog.conf
+   OR
    sudo vi /etc/rsyslog.conf
    ```
 
@@ -40,6 +55,7 @@ First, we'll set up a Rsyslog server on a designated RHEL server.
 
    ```bash
    sudo systemctl restart rsyslog
+   sudo systemctl status rsyslog
    ```
 
 #### Step 2: Configure Rsyslog Clients (Remote Servers)
@@ -51,7 +67,7 @@ Now, configure remote RHEL servers to send their logs to the centralized Rsyslog
    Install Rsyslog on each remote server from which you want to send logs:
 
    ```bash
-   sudo yum install rsyslog
+   sudo yum install rsyslog -y
    ```
 
 2. **Configure Rsyslog Client:**
@@ -59,6 +75,8 @@ Now, configure remote RHEL servers to send their logs to the centralized Rsyslog
    Edit the Rsyslog configuration file (`/etc/rsyslog.conf`) on each remote server:
 
    ```bash
+   sudo nano /etc/rsyslog.conf
+   OR
    sudo vi /etc/rsyslog.conf
    ```
 
